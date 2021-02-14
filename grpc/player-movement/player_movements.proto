@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package playermovement;
+
+option go_package = "github.com/idalmasso/world-changers/grpc/player-movement;player_movement";
+
+service PlayerMovement{
+  rpc PlayerPositionSync (stream PlayerPosition) returns (stream PlayerPosition);
+}
+
+message PlayerPosition{
+  string name = 1;
+  float x = 2;
+  float y = 3;
+}
