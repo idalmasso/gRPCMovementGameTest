@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package gameservice;
+
+option go_package = "github.com/idalmasso/world-changers/grpc/gamesrv;gamesrv";
+
+service GameService{
+  rpc Login(LoginRequest) returns (LoginResponse);
+  rpc StreamSync (stream PlayerPosition) returns (stream PlayerPositionArray);
+}
+enum MessageType {
+    Position = 0;
+    
+}
+
+message StreamedMessageRequest{
+  MessageType type=1;
+  oneof values_message{
+    PlayerPosition position=2;
+  }
+  
+}
+message StreamedMessageResponse{
+  MessageType type=1;
+  oneof values_message {
+    PlayerPositionArray positions=2;
+  }
+}
+
+message PlayerPositionArray {
+    repeated PlayerPosition playerPositions = 1;
+}
+
+message PlayerPosition{
+  string name = 1;
+  float x = 2;
+  float y = 3;
+}
+
+message LoginRequest{
+  string name = 1;
+  string password=2;
+}
+message LoginResponse{
+  string token = 1;
+}
