@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	pb "github.com/idalmasso/world-changers/grpc/gamesrv"
+	pb "github.com/idalmasso/gRPCMovementGameTest/grpc/gamesrv"
 )
 
 const (

@@ -1,4 +1,4 @@
-module github.com/idalmasso/world-changers
+module github.com/idalmasso/gRPCMovementGameTest
 
 go 1.15
 

@@ -4,7 +4,7 @@ import (
 	"sync"
 
 	"github.com/google/uuid"
-	pm "github.com/idalmasso/world-changers/grpc/gamesrv"
+	pm "github.com/idalmasso/gRPCMovementGameTest/grpc/gamesrv"
 )
 
 //Player contains the actual data of all this game stuff

@@ -8,8 +8,8 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/idalmasso/world-changers/grpc/gamesrv"
-	"github.com/idalmasso/world-changers/pkg/models"
+	pb "github.com/idalmasso/gRPCMovementGameTest/grpc/gamesrv"
+	"github.com/idalmasso/gRPCMovementGameTest/pkg/models"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

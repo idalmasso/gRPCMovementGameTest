@@ -5,7 +5,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/idalmasso/world-changers/grpc/gamesrv"
+	"github.com/idalmasso/gRPCMovementGameTest/grpc/gamesrv"
 )
 
 //GameInstance is a struct with all the data of an instance of the game
