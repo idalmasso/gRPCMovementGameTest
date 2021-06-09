@@ -1,2 +1,2 @@
-# world-changers
-World changers test for grpc with unity
+# gRPCMovementGameTest
+Test of backend in golang for little game made in Unity
